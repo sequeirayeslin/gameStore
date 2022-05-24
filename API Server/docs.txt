@@ -1,0 +1,26 @@
+API Docs
+
+endpoint: localhost:3000/
+
+
+Adding a game to cart:
+
+localhost:3000/api/addToCart/<username>/<gameId>
+
+
+Requesting game information:
+
+localhost:3000/api/getGameInfo/<gameId>
+
+Requesting cart:
+
+localhost:3000/api/getCart/<username>
+
+Disconnecting MongoDB:
+
+localhost:3000/api/admin/stopMongo/6111
+
+Reconnecting MongoDB:
+
+localhost:3000/api/admin/startMongo/6111
+

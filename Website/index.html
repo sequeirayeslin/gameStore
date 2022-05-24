@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS\style.css">
+        <title>The Game Store - Home</title>
+        <script src="Scripts/init.js"></script>
+
+    </head>
+    <body>
+        <h1>The Game Store</h1>
+        <h4 id="sub">yet another online videogame store...</h4>
+
+        <div id="nav">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button id="cart", onclick='showCart()'></button>
+        <!-- <button id="clear_cart", onclick="clearCart()">Clear</button> -->
+        
+        <br><br>
+        
+        <div id="new_releases", class="listings">
+            <fieldset id="new_releases_division", class="division">
+                <h2>New Releases</h2>
+            </fieldset>
+        </div>
+        
+        <div id="recommended", class="listings">
+            <fieldset id="recommended_division", class="division">
+                <h2>Recommended</h2>
+            </fieldset>
+        </div>
+        <div id="cart_overlay">
+            <h4>Cart</h4> <button id="close_cart", onclick="closeCart()">Close</button>
+            <fieldset id="cart_division", class="division">
+
+                <div id="cart_content">
+                </div>
+            </fieldset>
+            <div id="cart_footer">
+                <button id="clear_cart", onclick="clearCart()">Clear</button>
+                <button id="checkout", onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+        <script>
+            updateCart();
+            insertNewReleases();
+            insertRecommended();
+        </script>
+
+
+    </body>
+</html>
