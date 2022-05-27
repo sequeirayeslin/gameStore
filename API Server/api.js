@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const uri = require('./mongoUri.js');
+const uri = require('./config.js');
 
 const MongoClient = require('mongodb').MongoClient;
 const client = new MongoClient(uri);
